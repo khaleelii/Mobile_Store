@@ -11,9 +11,21 @@ export type Product = {
   colors: { name: string; hex: string }[];
   storage: string[];
   stock: number;
+  /** Stage backdrop behind the phone mock */
   imageGradient: string;
+  /** Lock-screen wallpaper theme rendered inside the phone display */
+  wallpaper: WallpaperTheme;
   badge?: string;
 };
+
+export type WallpaperTheme =
+  | "ember"
+  | "ocean"
+  | "mint"
+  | "titanium"
+  | "neon"
+  | "sunset"
+  | "noir";
 
 export type CartItem = {
   productId: string;

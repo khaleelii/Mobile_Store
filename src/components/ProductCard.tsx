@@ -2,24 +2,40 @@ import Link from "next/link";
 import type { Product } from "@/lib/types";
 import { formatMoney } from "@/lib/format";
 
+type PhoneSize = "sm" | "md" | "lg";
+
 export function PhoneVisual({
   product,
   className = "",
+  size = "md",
 }: {
   product: Product;
   className?: string;
+  size?: PhoneSize;
 }) {
   return (
     <div
-      className={`phone-visual ${className}`}
+      className={`phone-visual phone-stage size-${size} ${className}`}
       style={{ background: product.imageGradient }}
       aria-hidden
     >
+      <div className="phone-stage-glow" />
+      <div className="phone-stage-ring" />
       <div className="phone-bezel">
-        <div className="phone-notch" />
-        <div className="phone-screen">
-          <span className="phone-brand">{product.brand}</span>
-          <span className="phone-model">{product.name}</span>
+        <div className="phone-island" />
+        <div className={`phone-screen wallpaper-${product.wallpaper}`}>
+          <div className="wallpaper-layers">
+            <span className="wall-orb wall-orb-a" />
+            <span className="wall-orb wall-orb-b" />
+            <span className="wall-orb wall-orb-c" />
+            <span className="wall-mesh" />
+          </div>
+          <div className="phone-lock">
+            <span className="phone-time">9:41</span>
+            <span className="phone-brand">{product.brand}</span>
+            <span className="phone-model">{product.name}</span>
+          </div>
+          <div className="phone-home-bar" />
         </div>
       </div>
     </div>

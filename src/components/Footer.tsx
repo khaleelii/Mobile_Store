@@ -1,11 +1,12 @@
 import Link from "next/link";
+import { BrandLogo } from "./BrandLogo";
 
 export function Footer() {
   return (
     <footer className="site-footer">
       <div className="footer-inner">
         <div>
-          <p className="footer-brand">MobileStore</p>
+          <BrandLogo />
           <p className="footer-note">
             Curated phones, transparent pricing, and checkout that ships and confirms.
           </p>

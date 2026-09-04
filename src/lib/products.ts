@@ -32,7 +32,8 @@ export const products: Product[] = [
     storage: ["256GB", "512GB", "1TB"],
     stock: 30,
     imageGradient:
-      "linear-gradient(145deg, #1c1917 0%, #44403c 40%, #c45c26 100%)",
+      "radial-gradient(ellipse at 30% 20%, rgba(196,92,38,0.35), transparent 50%), linear-gradient(160deg, #0c0a09 0%, #292524 55%, #1c1917 100%)",
+    wallpaper: "ember",
     badge: "New",
   },
   {
@@ -64,7 +65,9 @@ export const products: Product[] = [
     ],
     storage: ["128GB", "256GB", "512GB"],
     stock: 24,
-    imageGradient: "linear-gradient(145deg, #0f172a 0%, #1e3a5f 45%, #0ea5e9 100%)",
+    imageGradient:
+      "radial-gradient(ellipse at 70% 10%, rgba(14,165,233,0.4), transparent 45%), linear-gradient(160deg, #020617 0%, #0f172a 50%, #1e3a5f 100%)",
+    wallpaper: "ocean",
     badge: "Best seller",
   },
   {
@@ -95,7 +98,9 @@ export const products: Product[] = [
     ],
     storage: ["128GB", "256GB"],
     stock: 40,
-    imageGradient: "linear-gradient(145deg, #ecfdf5 0%, #a7f3d0 40%, #064e3b 100%)",
+    imageGradient:
+      "radial-gradient(ellipse at 20% 80%, rgba(52,211,153,0.35), transparent 50%), linear-gradient(160deg, #022c22 0%, #064e3b 45%, #ecfdf5 100%)",
+    wallpaper: "mint",
   },
   {
     id: "nova-x",
@@ -126,7 +131,9 @@ export const products: Product[] = [
     ],
     storage: ["256GB", "512GB", "1TB"],
     stock: 12,
-    imageGradient: "linear-gradient(145deg, #1c1917 0%, #57534e 50%, #d6d3d1 100%)",
+    imageGradient:
+      "radial-gradient(ellipse at 50% 0%, rgba(214,211,209,0.35), transparent 45%), linear-gradient(165deg, #0c0a09 0%, #44403c 50%, #a8a29e 100%)",
+    wallpaper: "titanium",
     badge: "Pro",
   },
   {
@@ -156,7 +163,9 @@ export const products: Product[] = [
     ],
     storage: ["256GB", "512GB"],
     stock: 8,
-    imageGradient: "linear-gradient(145deg, #020617 0%, #312e81 55%, #67e8f9 100%)",
+    imageGradient:
+      "radial-gradient(ellipse at 80% 30%, rgba(103,232,249,0.35), transparent 45%), linear-gradient(155deg, #020617 0%, #1e1b4b 50%, #312e81 100%)",
+    wallpaper: "neon",
     badge: "Limited",
   },
   {
@@ -187,7 +196,9 @@ export const products: Product[] = [
     ],
     storage: ["64GB", "128GB"],
     stock: 55,
-    imageGradient: "linear-gradient(145deg, #fff7ed 0%, #fb923c 45%, #7c2d12 100%)",
+    imageGradient:
+      "radial-gradient(ellipse at 10% 20%, rgba(251,146,60,0.4), transparent 50%), linear-gradient(160deg, #7c2d12 0%, #c2410c 40%, #ffedd5 100%)",
+    wallpaper: "sunset",
     badge: "Value",
   },
   {
@@ -218,7 +229,9 @@ export const products: Product[] = [
     ],
     storage: ["256GB", "512GB"],
     stock: 18,
-    imageGradient: "linear-gradient(145deg, #fafafa 0%, #94a3b8 40%, #0f172a 100%)",
+    imageGradient:
+      "radial-gradient(ellipse at 60% 80%, rgba(148,163,184,0.35), transparent 50%), linear-gradient(170deg, #020617 0%, #1e293b 45%, #f8fafc 100%)",
+    wallpaper: "noir",
   },
 ];
 

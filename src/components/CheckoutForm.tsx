@@ -15,6 +15,7 @@ import {
 } from "@/lib/format";
 import type { ShippingMethod } from "@/lib/types";
 import { Lock, Loader2 } from "lucide-react";
+import { CardNetworkHint, PaymentBrandRow } from "./PaymentBrands";
 
 type FormState = {
   email: string;
@@ -277,6 +278,7 @@ export function CheckoutForm() {
 
         <section className="panel">
           <h2>Payment</h2>
+          <PaymentBrandRow />
           <p className="payment-hint">
             Demo checkout — use card <code>4242 4242 4242 4242</code>, any future
             expiry, any CVC. No real charge.
@@ -301,14 +303,17 @@ export function CheckoutForm() {
               id="cardNumber"
               full
             >
-              <input
-                id="cardNumber"
-                inputMode="numeric"
-                autoComplete="cc-number"
-                value={form.cardNumber}
-                onChange={(e) => set("cardNumber", formatCardNumber(e.target.value))}
-                placeholder="4242 4242 4242 4242"
-              />
+              <div className="card-number-wrap">
+                <input
+                  id="cardNumber"
+                  inputMode="numeric"
+                  autoComplete="cc-number"
+                  value={form.cardNumber}
+                  onChange={(e) => set("cardNumber", formatCardNumber(e.target.value))}
+                  placeholder="4242 4242 4242 4242"
+                />
+                <CardNetworkHint number={form.cardNumber} />
+              </div>
             </Field>
             <Field label="Expiry" error={fieldErrors.cardExpiry} id="cardExpiry">
               <input

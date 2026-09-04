@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { ShoppingBag, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { useCart } from "./CartProvider";
+import { BrandLogo } from "./BrandLogo";
 
 const links = [
   { href: "/", label: "Phones" },
@@ -20,12 +21,7 @@ export function Header() {
   return (
     <header className="site-header">
       <div className="header-inner">
-        <Link href="/" className="brand" onClick={() => setOpen(false)}>
-          <span className="brand-mark" aria-hidden />
-          <span className="brand-text">
-            Mobile<span>Store</span>
-          </span>
-        </Link>
+        <BrandLogo onNavigate={() => setOpen(false)} />
 
         <nav className={`nav ${open ? "open" : ""}`} aria-label="Primary">
           {links.map((link) => (

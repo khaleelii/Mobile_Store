@@ -29,7 +29,7 @@ export default async function ProductPage({ params }: Props) {
   return (
     <article className="product-detail">
       <div className="product-detail-media">
-        <PhoneVisual product={product} className="large" />
+        <PhoneVisual product={product} size="lg" />
       </div>
       <div className="product-detail-copy">
         <p className="eyebrow">{product.brand}</p>

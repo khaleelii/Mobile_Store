@@ -24,7 +24,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="hero-visual" aria-hidden>
-          <PhoneVisual product={featured} className="large" />
+          <PhoneVisual product={featured} size="lg" />
         </div>
       </section>
 

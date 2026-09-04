@@ -19,7 +19,7 @@ A Next.js storefront for smartphones with a working cart and checkout.
 | [docs/SYSTEM_DESIGN.md](./docs/SYSTEM_DESIGN.md) | Design decisions & ADRs |
 | [docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md) | System architecture diagrams |
 | [docs/DATA_FLOW.md](./docs/DATA_FLOW.md) | Sequence & data-flow diagrams |
-| [docs/DOMAIN_MODEL.md](./docs/DOMAIN_MODEL.md) | Entities & pricing |
+| [docs/DOMAIN_MODEL.md](./docs/DOMAIN_MODEL.md) | Entities, pricing, wallpapers & visuals |
 | [docs/API.md](./docs/API.md) | HTTP API contract |
 | [docs/SOURCE_OF_TRUTH.md](./docs/SOURCE_OF_TRUTH.md) | Canonical files map |
 | [docs/AGENT_CONTEXT.md](./docs/AGENT_CONTEXT.md) | Shared context for coding agents |

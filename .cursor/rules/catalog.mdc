@@ -1,6 +1,6 @@
 ---
 description: Catalog and product domain conventions
-globs: src/lib/products.ts,src/lib/types.ts,src/components/Product*.tsx,src/app/products/**/*
+globs: src/lib/products.ts,src/lib/types.ts,src/components/Product*.tsx,src/app/products/**/*,src/components/BrandLogo.tsx,src/components/PaymentBrands.tsx
 alwaysApply: false
 ---
 
@@ -9,5 +9,7 @@ alwaysApply: false
 - Add/edit phones only in `src/lib/products.ts`. Keep `id` and `slug` unique.
 - `storage[0]` is the base price tier for `getUnitPrice` relative premiums.
 - Cart/order lines identify by `productId` + `color` + `storage`.
-- Product visuals use `PhoneVisual` + `imageGradient` (CSS), not required photo assets.
+- Every product needs `wallpaper` (`ember` | `ocean` | `mint` | `titanium` | `neon` | `sunset` | `noir`) and `imageGradient` for the stage.
+- Product visuals use `PhoneVisual` (`sm` / `md` / `lg`). Cart thumbs must use `size="sm"`.
+- Brand mark: `BrandLogo`. Checkout payment badges: `PaymentBrands` (stylized marks, not official trademark assets).
 - Update `docs/DOMAIN_MODEL.md` when pricing rules or the Product shape change.

@@ -8,6 +8,7 @@ alwaysApply: true
 - This is a Next.js 16 App Router storefront (React 19, TypeScript, Tailwind 4). Read `node_modules/next/dist/docs/` before using unfamiliar Next APIs.
 - Full agent brief: `docs/AGENT_CONTEXT.md`. Docs index: `docs/README.md`. Source-of-truth map: `docs/SOURCE_OF_TRUTH.md`.
 - Catalog = `src/lib/products.ts`. Types = `src/lib/types.ts`. Order authority = `src/lib/orders.ts`. Cart = `src/components/CartProvider.tsx` (key `mobile-store-cart-v1`).
+- Visuals: `PhoneVisual` wallpapers + stage gradients; `BrandLogo`; checkout `PaymentBrands`. Cart thumbs use `size="sm"`.
 - MVP: no auth, no Stripe, no DB unless the user explicitly requests them. Orders go to gitignored `.data/orders.json`.
 - Never commit secrets, `.env*`, or `.data/`. Demo card only: `4242 4242 4242 4242`.
 - When changing behavior, update the matching file under `docs/` in the same change set.
