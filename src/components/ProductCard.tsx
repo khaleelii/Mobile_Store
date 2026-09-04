@@ -37,7 +37,7 @@ export function ProductCard({ product }: { product: Product }) {
         <p className="product-brand">{product.brand}</p>
         <h3>{product.name}</h3>
         <p className="product-price">
-          {formatMoney(product.price)}
+          From {formatMoney(product.price)}
           {product.compareAt ? (
             <span className="compare">{formatMoney(product.compareAt)}</span>
           ) : null}

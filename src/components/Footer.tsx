@@ -7,7 +7,7 @@ export function Footer() {
         <div>
           <p className="footer-brand">MobileStore</p>
           <p className="footer-note">
-            Curated phones, transparent pricing, and a checkout that actually works.
+            Curated phones, transparent pricing, and checkout that ships and confirms.
           </p>
         </div>
         <div className="footer-links">
