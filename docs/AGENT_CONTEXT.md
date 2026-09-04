@@ -29,6 +29,7 @@ Repo: https://github.com/khaleelii/Mobile_Store
 - **Catalog changes** go in `src/lib/products.ts` with unique `id`/`slug`.
 - **Types** stay in `src/lib/types.ts` — import, don’t copy.
 - **UI styles** primarily live in `src/app/globals.css` (design tokens + classes). Preserve the cobalt visual system unless redesign is requested.
+- Phone mocks: `PhoneVisual` with per-product `wallpaper` + `imageGradient`. Cart must use `size="sm"`. Logo: `BrandLogo`. Checkout payment badges: `PaymentBrands`.
 - Demo payment card for docs/tests: `4242 4242 4242 4242`.
 
 ## Primary routes

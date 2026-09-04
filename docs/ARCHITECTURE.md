@@ -60,7 +60,7 @@ flowchart TB
 
 | Layer | Responsibility | Location |
 |-------|----------------|----------|
-| Presentation | Routes, layout, CSS | `src/app/**`, `globals.css` |
+| Presentation | Routes, layout, CSS, phone wallpapers, payment badges | `src/app/**`, `globals.css`, `BrandLogo`, `PaymentBrands`, `PhoneVisual` |
 | UI components | Reusable interactive pieces | `src/components/**` |
 | Domain / lib | Catalog, pricing, validation, order write | `src/lib/**` |
 | Transport | HTTP handlers | `src/app/api/**` |

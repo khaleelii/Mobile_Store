@@ -70,7 +70,9 @@ Buyers need a simple way to browse smartphones, configure options (color / stora
 | FR-07 | Tax = 8% of merchandise subtotal (not shipping) | Matches `calcTax` |
 | FR-08 | Successful POST creates order id `MS-XXXXXXXX` status `paid` | Written under `.data/orders.json` |
 | FR-09 | Confirmation page loads order by id via API | Shows items, totals, ship-to, last4 |
-| FR-10 | Demo card `4242 4242 4242 4242` must pass Luhn | Documented in README |
+| FR-11 | Each product shows a designed lock-screen wallpaper in `PhoneVisual` | Theme from `product.wallpaper` |
+| FR-12 | Checkout shows common payment brand marks + detected card network chip | `PaymentBrandRow` / `CardNetworkHint` |
+| FR-13 | Cart line thumbnails render a compact phone preview | `PhoneVisual size="sm"` fits thumb box |
 
 ## 7. Non-functional requirements
 

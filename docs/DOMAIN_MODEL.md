@@ -19,6 +19,8 @@ erDiagram
     string[] storage
     object[] colors
     number stock
+    string imageGradient
+    string wallpaper
   }
 
   CART_ITEM {
@@ -99,4 +101,14 @@ Tax = **8%** of merchandise subtotal only (`calcTax` in `format.ts`).
 
 Maintained in `src/lib/products.ts`. Includes Apple **iPhone 17 Pro Max** (256 / 512 / 1TB) plus demo brands (ATLAS, NOVA, PULSE, ORBIT, ZENITH).
 
-Adding a product = append a `Product` object; ensure unique `id` / `slug`; first `storage` entry is the base price tier.
+Adding a product = append a `Product` object; ensure unique `id` / `slug`; first `storage` entry is the base price tier; set `wallpaper` (`ember` | `ocean` | `mint` | `titanium` | `neon` | `sunset` | `noir`) and a stage `imageGradient`.
+
+## 6. Storefront visuals
+
+| Piece | Owner |
+|-------|--------|
+| Phone mock + lock-screen wallpaper | `PhoneVisual` in `src/components/ProductCard.tsx` + wallpaper CSS in `globals.css` |
+| Stage backdrop | `product.imageGradient` + `.phone-stage-*` |
+| Cart thumbnail | `PhoneVisual` with `size="sm"` |
+| Brand mark | `src/components/BrandLogo.tsx` |
+| Payment brand row | `src/components/PaymentBrands.tsx` (stylized Visa / MC / Amex / Apple Pay / GPay / Discover) |

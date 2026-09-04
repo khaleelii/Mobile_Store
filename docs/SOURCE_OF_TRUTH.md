@@ -10,7 +10,10 @@ When docs and code disagree, **code wins** — then update docs in the same PR.
 | Money / shipping / tax / card helpers | `src/lib/format.ts` | |
 | Cart behavior & storage key | `src/components/CartProvider.tsx` | `mobile-store-cart-v1` |
 | Checkout UX | `src/components/CheckoutForm.tsx` | |
-| Visual design tokens / layout CSS | `src/app/globals.css` | |
+| Visual design tokens / layout CSS | `src/app/globals.css` | Includes phone wallpapers + payment badges |
+| Brand logo | `src/components/BrandLogo.tsx` | Header + footer |
+| Phone display mock | `src/components/ProductCard.tsx` (`PhoneVisual`) | Sizes: `sm` \| `md` \| `lg` |
+| Payment method badges | `src/components/PaymentBrands.tsx` | Checkout UX only |
 | App chrome / fonts / providers | `src/app/layout.tsx` | |
 | HTTP contracts | `src/app/api/orders/**` | Keep `docs/API.md` aligned |
 | Product requirements | `docs/PRD.md` | Goals & acceptance |

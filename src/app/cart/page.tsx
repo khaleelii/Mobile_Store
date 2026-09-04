@@ -43,7 +43,7 @@ export default function CartPage() {
                 className="cart-item"
               >
                 <div className="cart-item-thumb">
-                  <PhoneVisual product={product} />
+                  <PhoneVisual product={product} size="sm" />
                 </div>
                 <div>
                   <h3>
