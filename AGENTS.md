@@ -7,3 +7,9 @@ This version has breaking changes — APIs, conventions, and file structure may 
 This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
 
 <!-- END:nextjs-agent-rules -->
+
+# MobileStore agent entry
+
+Project brief for humans and AI: **[docs/AGENT_CONTEXT.md](./docs/AGENT_CONTEXT.md)**  
+Docs index: **[docs/README.md](./docs/README.md)** · Source of truth: **[docs/SOURCE_OF_TRUTH.md](./docs/SOURCE_OF_TRUTH.md)**  
+Cursor rules: **[.cursor/rules/](./.cursor/rules/)**

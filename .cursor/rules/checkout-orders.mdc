@@ -1,0 +1,14 @@
+---
+description: Checkout and orders API conventions
+globs: src/lib/orders.ts,src/lib/format.ts,src/app/api/orders/**/*,src/components/CheckoutForm.tsx
+alwaysApply: false
+---
+
+# Checkout & orders
+
+- Validate and price on the server in `createOrder` / `validateCheckout`. Client summary is UX only.
+- Return `400` with `{ errors: [{ field?, message }] }` for validation failures; `201` with `{ orderId }` on success.
+- Persist only `paymentLast4`, never full PAN, in stored orders.
+- Tax = 8% of merchandise subtotal; shipping from `SHIPPING_OPTIONS` in `format.ts`.
+- After successful checkout UI must `clearCart()` then navigate to `/order/{orderId}`.
+- Keep `docs/API.md` and PRD acceptance criteria aligned with code changes.
