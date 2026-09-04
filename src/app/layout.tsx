@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import { Manrope, Syne } from "next/font/google";
+import { Bricolage_Grotesque, Figtree } from "next/font/google";
 import { CartProvider } from "@/components/CartProvider";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import "./globals.css";
 
-const manrope = Manrope({
-  variable: "--font-manrope",
+const figtree = Figtree({
+  variable: "--font-figtree",
   subsets: ["latin"],
 });
 
-const syne = Syne({
-  variable: "--font-syne",
+const bricolage = Bricolage_Grotesque({
+  variable: "--font-bricolage",
   subsets: ["latin"],
 });
 
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${manrope.variable} ${syne.variable} h-full`}>
+    <html lang="en" className={`${figtree.variable} ${bricolage.variable} h-full`}>
       <body className="min-h-full flex flex-col antialiased">
         <CartProvider>
           <Header />
